@@ -1,0 +1,97 @@
+---
+title: Introduction
+description: Overview of Paperguide and its core capabilities for AI-powered research
+---
+
+## Getting Started
+
+Paperguide revolutionizes research for students, academics, and professionals by integrating AI tools for discovery, analysis, and writing. You access a unified platform that manages references, generates insights, and streamlines workflows. Start by creating an account to explore smart search and intelligent summaries.
+
+<Columns cols={3}>
+  <Card title="Smart Discovery" icon="search" href="#">
+    Find relevant papers and resources instantly using AI-driven queries that understand context and intent.
+  </Card>
+  <Card title="Reference Management" icon="file-text" href="#">
+    Organize your library with automatic tagging, citation generation, and cross-referencing features.
+  </Card>
+  <Card title="Writing Assistant" icon="edit" href="#">
+    Draft papers with AI suggestions for structure, clarity, and academic tone.
+  </Card>
+</Columns>
+
+## Core Features
+
+You begin your research journey with Paperguide's intuitive interface. The platform supports uploading PDFs, connecting to databases like PubMed or Google Scholar, and importing from Zotero. AI analyzes content to extract key themes, relationships between studies, and potential gaps in literature.
+
+<Callout kind="info">
+  Ensure you have a stable internet connection for real-time AI processing.
+</Callout>
+
+To set up, follow these steps:
+
+<Steps>
+  <Step title="Create Account" icon="user">
+    Visit the signup page and provide your email. Verify via the confirmation link sent to your inbox.
+  </Step>
+  <Step title="Import Library" icon="upload">
+    Use the import tool to add existing references. Supported formats include RIS, BibTeX, and CSV.
+  </Step>
+  <Step title="Start Searching" icon="search">
+    Enter your query in the search bar. Refine results with filters for date, author, or relevance score.
+  </Step>
+</Steps>
+
+## Use Cases
+
+Researchers use Paperguide to accelerate literature reviews by summarizing hundreds of papers into actionable insights. Students benefit from guided writing prompts that align with citation styles like APA or MLA. Professionals in consulting apply it for competitive analysis, generating reports with embedded references.
+
+<Tabs>
+  <Tab title="Academic Research" icon="book-open">
+    Focus on thesis development with AI outlining tools.
+    
+````javascript
+    // Example query for literature review
+const query = 'climate change impacts on agriculture';
+const results = await paperguide.search(query, { limit: 50, filters: { year: '>2020' } });
+console.log(results);
+````
+  </Tab>
+  <Tab title="Professional Analysis" icon="bar-chart">
+    Analyze market trends with integrated data visualization.
+    
+````python
+import paperguide as pg
+results = pg.search('AI in healthcare', filters={'domain': 'medicine'})
+print(results.summary())
+````
+  </Tab>
+</Tabs>
+
+For advanced users, integrate via API for custom workflows.
+
+<ExpandableGroup>
+  <Expandable title="What is AI Analysis?" default-open="false">
+    Paperguide's AI processes text using natural language models to identify entities, sentiments, and connections.
+  </Expandable>
+  <Expandable title="Supported Formats">
+    Upload PDFs, DOCX, or EPUB files directly. The system extracts text and metadata automatically for indexing.
+  </Expandable>
+</ExpandableGroup>
+
+<Update label="Recent Enhancement" description="Improved Search" tags={["improvement"]}>
+  Enhanced query understanding for better relevance.
+</Update>
+
+Paperguide ensures data privacy with end-to-end encryption and user-controlled sharing. You control access to your library, with options for collaborative projects. The platform updates regularly to incorporate new AI advancements, keeping your research tools cutting-edge. Explore the features page for deeper dives into specific capabilities. With over 500,000 users worldwide, Paperguide has transformed how knowledge is curated and applied.
+
+## Benefits
+
+You save hours on manual tasks, allowing focus on innovation. The mobile app syncs across devices for on-the-go access. Integration with tools like Overleaf enables seamless manuscript preparation.
+
+| Feature | Benefit | Example |
+|---------|---------|---------|
+| Smart Search | Finds hidden connections | Query: `{interdisciplinary studies}` returns cross-field papers |
+| Auto-Summaries | Condenses long texts | `<5 min` per document |
+| Citation Export | Formats instantly | APA, MLA, Chicago styles |
+
+This comprehensive approach makes Paperguide indispensable for modern research.

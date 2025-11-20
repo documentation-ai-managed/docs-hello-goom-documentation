@@ -1,0 +1,115 @@
+---
+title: Features
+description: Detailed overview of Paperguide's key features for enhanced research productivity
+---
+
+## Smart Discovery
+
+You discover relevant literature effortlessly with Paperguide's AI search engine. It processes queries in natural language, returning results from vast academic databases. The system ranks items by novelty, citation impact, and alignment with your research goals.
+
+<Columns cols={3}>
+  <Card title="Contextual Search" icon="search" href="#">
+    Understands query intent beyond keywords.
+  </Card>
+  <Card title="Related Works" icon="link" href="#">
+    Suggests interconnected papers automatically.
+  </Card>
+  <Card title="Trend Analysis" icon="trending-up" href="#">
+    Identifies emerging topics in your field.
+  </Card>
+</Columns>
+
+````javascript
+// Performing a contextual search
+const results = await paperguide.discover({
+  query: 'sustainable energy solutions {renewable}' ,
+  context: 'policy implications',
+  maxResults: 25
+});
+````
+
+## Intelligent Analysis
+
+You analyze documents with AI tools that extract insights, detect biases, and summarize content. Upload papers, and Paperguide generates mind maps of concepts and relationships.
+
+<Callout kind="info">
+  Analysis runs on secure servers; results are private to your account.
+</Callout>
+
+<Tabs>
+  <Tab title="Summary Generation" icon="file-text">
+    Get concise overviews of long papers.
+    
+````python
+analysis = client.analyze(document_id='doc123', focus='key findings');
+print(analysis.summary);
+````
+  </Tab>
+  <Tab title="Entity Extraction" icon="cpu">
+    Identifies people, organizations, and methods mentioned in text.
+    
+````javascript
+const entities = await client.extractEntities({
+  text: 'The study by Smith et al. uses neural networks.'
+});
+// Returns: [{type: 'person', name: 'Smith'}]
+````
+  </Tab>
+</Tabs>
+
+<Steps>
+  <Step title="Upload Document" icon="upload">
+    Select files from your device or cloud storage.
+  </Step>
+  <Step title="Run Analysis" icon="zap">
+    Choose analysis type: summary, extraction, or visualization.
+  </Step>
+  <Step title="Review Insights" icon="lightbulb">
+    Explore generated reports and export to various formats.
+  </Step>
+</Steps>
+
+## Unified Management
+
+You manage your entire research library in one place. Features include duplicate detection, version tracking, and collaborative folders.
+
+<ExpandableGroup>
+  <Expandable title="Collaboration Tools">
+    Share libraries with team members for real-time edits and comments.
+  </Expandable>
+  <Expandable title="Export Options">
+    Download in BibTeX, RIS, or integrated with LaTeX editors.
+  </Expandable>
+</ExpandableGroup>
+
+| Management Feature | Description | Benefit |
+|--------------------|-------------|---------|
+| Auto-Deduplication | Merges similar entries | Saves storage and time |
+| Search Within Library | Full-text indexing | Quick retrieval `>90% accuracy` |
+| Citation Tracking | Monitors updates to sources | Keeps references current |
+
+## Writing Assistant
+
+You draft and refine papers with AI guidance. The assistant suggests outlines, paraphrases text, and checks for plagiarism.
+
+````mermaid
+graph TD
+    A[Idea Input] --> B[Outline Generation]
+    B --> C[Draft Writing]
+    C --> D[Review & Edit]
+    D --> E[Final Export]
+````
+
+<Callout kind="tip">
+  Customize writing style to match academic standards.
+</Callout>
+
+Integrate with word processors for inline suggestions. Paperguide's features interconnect, creating a cohesive ecosystem. For instance, analysis insights feed directly into writing prompts. Users report `30% faster` completion times. Explore integrations for expanded functionality. The platform evolves with user feedback, adding tools like voice-to-text for notes. This suite empowers you to focus on ideas rather than logistics, fostering groundbreaking research.
+
+## Advanced Capabilities
+
+Leverage API for custom apps, or use webhooks for notifications on new publications. Security features include two-factor authentication and audit logs.
+
+<Update label="Feature Rollout" description="v1.2" tags={["feature"]}>
+  Introduced mind mapping visualization.
+</Update>

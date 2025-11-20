@@ -1,0 +1,187 @@
+---
+title: API Overview
+description: Introduction to Paperguide's API for programmatic access to research tools
+---
+
+## API Fundamentals
+
+You integrate Paperguide's capabilities into your applications using a RESTful API. The API provides endpoints for search, analysis, and library management, enabling automated workflows. Authentication uses API keys for secure access.
+
+<Callout kind="info">
+  Generate your API key from the settings dashboard.
+</Callout>
+
+Start by obtaining credentials:
+
+<Steps>
+  <Step title="Generate Key" icon="key">
+    Log in to your account and navigate to API settings.
+    
+````bash
+# Request new key
+curl -X POST /api/keys \
+  -H "Authorization: Bearer {user_token}" \
+  -d '{"name": "My App"}'
+````
+  </Step>
+  <Step title="Authenticate Requests" icon="lock">
+    Include the key in headers for all calls.
+  </Step>
+  <Step title="Test Endpoint" icon="play">
+    Use the search endpoint to verify connectivity.
+  </Step>
+</Steps>
+
+## Key Endpoints
+
+You access core functions through dedicated paths. The API supports JSON payloads and returns structured responses.
+
+<Tabs>
+  <Tab title="Search Endpoint" icon="search">
+    Query literature programmatically.
+    
+<Request tabs="JavaScript,cURL">
+  ````javascript
+const response = await fetch('/api/research/search', {
+    method: 'GET',
+    headers: { 'Authorization': `Bearer ${apiKey}` },
+    searchParams: { q: 'AI ethics', limit: 10 }
+  });
+  const data = await response.json();
+````
+  ````bash
+curl "/api/research/search?q=AI%20ethics&limit=10" \
+  -H "Authorization: Bearer {api_key}"
+````
+</Request>
+  </Tab>
+  <Tab title="Analysis Endpoint" icon="cpu">
+    Analyze documents via API.
+    
+<Request tabs="Python,JavaScript">
+  ````python
+import requests
+response = requests.post('/api/analysis', 
+  headers={'Authorization': f'Bearer {api_key}'},
+  json={'document_id': 'doc123', 'type': 'summary'}
+)
+print(response.json())
+````
+  ````javascript
+const analysis = await fetch('/api/analysis', {
+    method: 'POST',
+    headers: {
+      'Authorization': `Bearer ${apiKey}`,
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+      document_id: 'doc123',
+      type: 'summary'
+    })
+  });
+````
+</Request>
+  </Tab>
+</Tabs>
+
+<Response tabs="200,400">
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "id": "res1",
+      "title": "AI Ethics Paper",
+      "summary": "Overview of ethical concerns..."
+    }
+  ]
+}
+```
+
+```json
+{
+  "error": "Invalid query",
+  "code": 400
+}
+```
+</Response>
+
+## Parameters and Responses
+
+You specify parameters in query strings or bodies. Responses include metadata for pagination and error handling.
+
+<ParamField path="q" param-type="string" required="true">
+  Search query string.
+</ParamField>
+
+<ParamField query="limit" param-type="integer" required="false">
+  Maximum results to return, default 10, max 100.
+</ParamField>
+
+<ResponseField name="data" field-type="array" required="true">
+  Array of research items with titles and abstracts.
+</ResponseField>
+
+<ResponseField name="next_page" field-type="string">
+  Token for fetching subsequent results.
+</ResponseField>
+
+## Rate Limits and Best Practices
+
+You adhere to rate limits of 100 requests per minute to ensure fair usage. Implement exponential backoff for retries on 429 errors.
+
+<Expandable title="Error Handling" default-open="false">
+  Common codes: 401 for auth failure, 404 for invalid IDs, 500 for server issues. Always check the `code` field.
+</Expandable>
+
+````javascript
+// Handling pagination
+let allResults = [];
+let next = null;
+do {
+  const params = next ? { next } : {};
+  const res = await fetch('/api/search', { ...params });
+  const data = await res.json();
+  allResults.push(...data.data);
+  next = data.next_page;
+} while (next);
+````
+
+| Endpoint | Method | Description | Rate Limit |
+|----------|--------|-------------|------------|
+| /search | GET | Retrieve research items | 100/min |
+| /analysis | POST | Perform AI analysis | 50/min |
+| /library | GET | List user library | 200/min |
+
+## Security Considerations
+
+You secure your API key by storing it in environment variables, never in code. Use HTTPS for all requests. Paperguide employs OAuth 2.0 for advanced integrations.
+
+<Callout kind="danger">
+  Revoke keys immediately if compromised.
+</Callout>
+
+<Columns cols={2}>
+  <Card title="SDKs Available" icon="package" href="#">
+    Official libraries for JavaScript, Python, and Java.
+  </Card>
+  <Card title="Webhook Support" icon="zap" href="#">
+    Notify external systems on events like new imports.
+  </Card>
+</Columns>
+
+The API evolves with versioned endpoints, ensuring backward compatibility. Monitor the changelog for updates. Developers praise the intuitive design, with comprehensive docs and examples. Build powerful extensions, from custom dashboards to automated alerts. This API layer unlocks Paperguide's power for enterprise-scale applications.
+
+## Integration Examples
+
+Connect to CI/CD pipelines for automated literature scans during project kicks-offs. Use webhooks to sync with project management tools like Trello.
+
+````mermaid
+sequenceDiagram
+  Client->>Paperguide API: POST /analysis
+  Paperguide API->>AI Engine: Process request
+  AI Engine->>Paperguide API: Return insights
+  Paperguide API->>Client: JSON response
+````
+
+With robust error handling and detailed responses, you develop reliable integrations confidently.
