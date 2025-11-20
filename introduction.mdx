@@ -2,19 +2,20 @@
 title: Introduction
 description: Overview of Paperguide and its core capabilities for AI-powered research
 ---
-
 ## Getting Started
 
 Paperguide revolutionizes research for students, academics, and professionals by integrating AI tools for discovery, analysis, and writing. You access a unified platform that manages references, generates insights, and streamlines workflows. Start by creating an account to explore smart search and intelligent summaries.
 
-<Columns cols={3}>
-  <Card title="Smart Discovery" icon="search" href="#">
+<Columns uid="defa1970-0ef0-4251-a25d-eef8c0d2ab49" cols="2">
+  <Card title="Smart Discovery" href="#" icon="search" horizontal="false">
     Find relevant papers and resources instantly using AI-driven queries that understand context and intent.
   </Card>
-  <Card title="Reference Management" icon="file-text" href="#">
+
+  <Card title="Reference Management" href="#" icon="file-text" horizontal="false">
     Organize your library with automatic tagging, citation generation, and cross-referencing features.
   </Card>
-  <Card title="Writing Assistant" icon="edit" href="#">
+
+  <Card title="Writing Assistant" href="#" icon="edit" horizontal="false">
     Draft papers with AI suggestions for structure, clarity, and academic tone.
   </Card>
 </Columns>
@@ -23,20 +24,22 @@ Paperguide revolutionizes research for students, academics, and professionals by
 
 You begin your research journey with Paperguide's intuitive interface. The platform supports uploading PDFs, connecting to databases like PubMed or Google Scholar, and importing from Zotero. AI analyzes content to extract key themes, relationships between studies, and potential gaps in literature.
 
-<Callout kind="info">
+<Callout uid="c7a07169-59c6-496c-b924-b654e4627dea" kind="info" collapsed="false">
   Ensure you have a stable internet connection for real-time AI processing.
 </Callout>
 
 To set up, follow these steps:
 
-<Steps>
-  <Step title="Create Account" icon="user">
+<Steps uid="b84502bd-4a8f-41a3-bfac-72e78ddfcf1e">
+  <Step title="Create Account" icon="user" title-type="p">
     Visit the signup page and provide your email. Verify via the confirmation link sent to your inbox.
   </Step>
-  <Step title="Import Library" icon="upload">
+
+  <Step title="Import Library" icon="upload" title-type="p">
     Use the import tool to add existing references. Supported formats include RIS, BibTeX, and CSV.
   </Step>
-  <Step title="Start Searching" icon="search">
+
+  <Step title="Start Searching" icon="search" title-type="p">
     Enter your query in the search bar. Refine results with filters for date, author, or relevance score.
   </Step>
 </Steps>
@@ -45,35 +48,37 @@ To set up, follow these steps:
 
 Researchers use Paperguide to accelerate literature reviews by summarizing hundreds of papers into actionable insights. Students benefit from guided writing prompts that align with citation styles like APA or MLA. Professionals in consulting apply it for competitive analysis, generating reports with embedded references.
 
-<Tabs>
+<Tabs uid="fd51f934-c6c2-4c04-877a-428b32d51269">
   <Tab title="Academic Research" icon="book-open">
     Focus on thesis development with AI outlining tools.
-    
-````javascript
-    // Example query for literature review
-const query = 'climate change impacts on agriculture';
-const results = await paperguide.search(query, { limit: 50, filters: { year: '>2020' } });
-console.log(results);
-````
+
+    ```javascript
+        // Example query for literature review
+    const query = 'climate change impacts on agriculture';
+    const results = await paperguide.search(query, { limit: 50, filters: { year: '>2020' } });
+    console.log(results);
+    ```
   </Tab>
+
   <Tab title="Professional Analysis" icon="bar-chart">
     Analyze market trends with integrated data visualization.
-    
-````python
-import paperguide as pg
-results = pg.search('AI in healthcare', filters={'domain': 'medicine'})
-print(results.summary())
-````
+
+    ```python
+    import paperguide as pg
+    results = pg.search('AI in healthcare', filters={'domain': 'medicine'})
+    print(results.summary())
+    ```
   </Tab>
 </Tabs>
 
 For advanced users, integrate via API for custom workflows.
 
-<ExpandableGroup>
+<ExpandableGroup uid="2adaf758-5237-4e7d-9e9f-2d1b8a65922a">
   <Expandable title="What is AI Analysis?" default-open="false">
     Paperguide's AI processes text using natural language models to identify entities, sentiments, and connections.
   </Expandable>
-  <Expandable title="Supported Formats">
+
+  <Expandable title="Supported Formats" default-open="false">
     Upload PDFs, DOCX, or EPUB files directly. The system extracts text and metadata automatically for indexing.
   </Expandable>
 </ExpandableGroup>
@@ -88,10 +93,10 @@ Paperguide ensures data privacy with end-to-end encryption and user-controlled s
 
 You save hours on manual tasks, allowing focus on innovation. The mobile app syncs across devices for on-the-go access. Integration with tools like Overleaf enables seamless manuscript preparation.
 
-| Feature | Benefit | Example |
-|---------|---------|---------|
-| Smart Search | Finds hidden connections | Query: `{interdisciplinary studies}` returns cross-field papers |
-| Auto-Summaries | Condenses long texts | `<5 min` per document |
-| Citation Export | Formats instantly | APA, MLA, Chicago styles |
+| Feature         | Benefit                  | Example                                                         |
+| --------------- | ------------------------ | --------------------------------------------------------------- |
+| Smart Search    | Finds hidden connections | Query: `{interdisciplinary studies}` returns cross-field papers |
+| Auto-Summaries  | Condenses long texts     | `<5 min` per document                                           |
+| Citation Export | Formats instantly        | APA, MLA, Chicago styles                                        |
 
 This comprehensive approach makes Paperguide indispensable for modern research.
