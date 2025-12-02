@@ -1,156 +1,85 @@
 ---
-title: "AI Summary - Paper"
-description: "Learn how Paperguide uses AI to generate concise summaries of academic papers for rapid understanding, time savings, and accessible insights. This guide explains usage, workflow, benefits, and verification notes."
+title: AI Summary - Paper
+description: >-
+  Learn how Paperguide uses AI to generate concise summaries of academic papers
+  for rapid understanding, time savings, and accessible insights. This guide
+  explains usage, workflow, benefits, and verification notes.
 ---
-
 ## Overview
 
 Paperguide's AI Summary feature automatically generates concise overviews of academic papers, making it easier for researchers and students to quickly understand the key points of complex research. By leveraging advanced artificial intelligence, you receive readable, structured summaries that accelerate your literature review process.
 
-<Callout kind="info">
-
-**AI-generated summaries help you rapidly grasp the essentials—saving hours of work and making your research workflow more efficient.**
-
+<Callout kind="info" collapsed="false">
+  **AI-generated summaries help you rapidly grasp the essentials—saving hours of work and making your research workflow more efficient.**
 </Callout>
 
 ### Main Benefits
 
-<Columns cols={3}>
+<Columns cols="3">
+  <Card title="Quick Understanding" href="/my-references/overview" icon="zap" horizontal="false">
+    AI distills lengthy papers into short, informative summaries, presenting main arguments and findings within seconds.
+  </Card>
 
-<Card
-  title="Quick Understanding"
-  icon="zap"
-  href="/my-references/overview"
->
-  
-AI distills lengthy papers into short, informative summaries, presenting main arguments and findings within seconds.
+  <Card title="Save Time" href="/my-references/importing-references" icon="clock" horizontal="false">
+    Reduce hours spent reading and annotating papers. Get to the key information instantly and focus your efforts.
+  </Card>
 
-</Card>
-
-<Card
-  title="Save Time"
-  icon="clock"
-  href="/my-references/importing-references"
->
-  
-Reduce hours spent reading and annotating papers. Get to the key information instantly and focus your efforts.
-
-</Card>
-
-<Card
-  title="Accessible Insights"
-  icon="book-open"
-  href="/my-references/organising-with-folders"
->
-  
-Summaries are designed for clarity, enabling accessibility for non-specialists and supporting fast literature reviews.
-
-</Card>
-
+  <Card title="Accessible Insights" href="/my-references/organising-with-folders" icon="book-open" horizontal="false">
+    Summaries are designed for clarity, enabling accessibility for non-specialists and supporting fast literature reviews.
+  </Card>
 </Columns>
 
 ## How It Works
 
-The AI Summary feature can be used on any paper you upload or import into Paperguide. With one click, Paperguide processes the document and displays a succinct summary that highlights objectives, methodology, results, and conclusions. 
+The AI Summary feature can be used on any paper you upload or import into Paperguide. With one click, Paperguide processes the document and displays a succinct summary that highlights objectives, methodology, results, and conclusions.
 
 <Steps>
+  <Step title="Upload or Import Your Paper" icon="upload" title-type="p">
+    Select a PDF or supported file from your computer, or import one from a reference manager (such as Zotero).
+  </Step>
 
-<Step title="Upload or Import Your Paper" icon="upload">
+  <Step title="Generate AI Summary" icon="robot" title-type="p">
+    Click the "Summarize with AI" button next to your paper reference. The system analyzes the entire paper using natural language processing.
+  </Step>
 
-  
-Select a PDF or supported file from your computer, or import one from a reference manager (such as Zotero).
+  <Step title="Review the Structured Summary" icon="list" title-type="p">
+    The summary will appear directly within your reference details. It highlights:
 
-</Step>
+    - Main objectives and research questions
 
-<Step title="Generate AI Summary" icon="robot">
+    - Methods and experimental design
 
-  
-Click the "Summarize with AI" button next to your paper reference. The system analyzes the entire paper using natural language processing.
+    - Key results and findings
 
-</Step>
-
-<Step title="Review the Structured Summary" icon="list">
-
-  
-The summary will appear directly within your reference details. It highlights:
-- Main objectives and research questions
-- Methods and experimental design
-- Key results and findings
-- Primary conclusions
-
-  
-</Step>
-
+    - Primary conclusions
+  </Step>
 </Steps>
-
-### Example: AI-Generated Summary
-
-<Request tabs="Cited Paper, Raw Extraction" show-lines="false" default-tab="1">
-
-```markdown
-**Cited Paper Summary**  
-This paper investigates the role of synaptic plasticity in memory formation. Using a combination of computational models and biological experiments, the authors show that long-term potentiation at specific neuron types is critical for encoding spatial memory. The main findings highlight the dynamic interaction between neural circuits and the implications for treating memory disorders.
-```
-
-```markdown
-**Raw Extraction**  
-The study explores synaptic changes associated with spatial memory. Methods include in vivo recording and neural simulations. Results show enhanced potentiation in hippocampal circuits following training sessions. The authors conclude that targeted interventions may support cognitive therapies.
-```
-
-</Request>
-
-### Workflow Diagram
-
-Below is a basic visualization of the Paperguide AI summary workflow:
-
-```mermaid
-graph LR
-A[Upload Paper] --> B[Run AI Summary]
-B --> C[Review Summary]
-```
 
 ## Important Verification Note
 
-<Callout kind="alert">
-
-While Paperguide's AI summaries are designed for accuracy, always **verify critical details by reading the original paper directly**. AI-produced content may occasionally omit nuances or misinterpret specific data.
-
+<Callout kind="alert" collapsed="false">
+  While Paperguide's AI summaries are designed for accuracy, always **verify critical details by reading the original paper directly**. AI-produced content may occasionally omit nuances or misinterpret specific data.
 </Callout>
 
 <ExpandableGroup>
+  <Expandable title="What types of papers are best suited for AI summarization?" default-open="false">
+    Most peer-reviewed journals, conference papers, and preprints in PDF format are supported. Papers with clear structure (abstract, sections, references) yield the best summaries.
+  </Expandable>
 
-<Expandable title="What types of papers are best suited for AI summarization?" default-open="false">
-
-  
-Most peer-reviewed journals, conference papers, and preprints in PDF format are supported. Papers with clear structure (abstract, sections, references) yield the best summaries.
-
-</Expandable>
-
-<Expandable title="What information is included or excluded in the AI summary?" default-open="false">
-
-  
-Summaries emphasize objectives, methods, principal findings, and main conclusions. Supplementary data, figures, or precise statistical values may not be referenced explicitly.
-
-</Expandable>
-
+  <Expandable title="What information is included or excluded in the AI summary?" default-open="false">
+    Summaries emphasize objectives, methods, principal findings, and main conclusions. Supplementary data, figures, or precise statistical values may not be referenced explicitly.
+  </Expandable>
 </ExpandableGroup>
 
 ## Next Steps
 
-<Columns cols={2}>
+<Columns cols="2">
+  <Card title="Organising with Folders" href="/my-references/organising-with-folders" icon="folder" cta="Learn about organization" horizontal="false">
 
-<Card
-  title="Organising with Folders"
-  href="/my-references/organising-with-folders"
-  icon="folder"
-  cta="Learn about organization"
-/>
+  </Card>
 
-<Card
-  title="Import from Zotero"
-  href="/my-references/import-from-zotero"
-  icon="folder-down"
-  cta="Automate your imports"
-/>
+  <Card title="Import from Zotero" href="/my-references/import-from-zotero" icon="folder-down" cta="Automate your imports" horizontal="false">
 
+  </Card>
 </Columns>
+
