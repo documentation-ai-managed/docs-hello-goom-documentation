@@ -1,1 +1,225 @@
-"{\n  \"name\": \"Paperguide Documentation\",\n  \"initialRoute\": \"introduction\",\n  \"colors\": {\n    \"light\": {\n      \"brand\": \"#e45d20\"\n    },\n    \"dark\": {\n      \"brand\": \"#e45d20\"\n    }\n  },\n  \"navigation\": {\n    \"tabs\": [\n      {\n        \"tab\": \"Help Guide\",\n        \"groups\": [\n          {\n            \"group\": \"Get Started\",\n            \"pages\": [\n              {\n                \"title\": \"Introduction\",\n                \"path\": \"introduction\",\n                \"icon\": \"zap\"\n              },\n              {\n                \"title\": \"Research Backed Answers\",\n                \"path\": \"research-backed-answers\",\n                \"icon\": \"search\"\n              },\n              {\n                \"title\": \"Write First Document\",\n                \"path\": \"write-first-document\",\n                \"icon\": \"file-text\"\n              },\n              {\n                \"title\": \"Adding References\",\n                \"path\": \"adding-references\",\n                \"icon\": \"folder\"\n              },\n              {\n                \"title\": \"Chatting with PDFs\",\n                \"path\": \"chat-with-papers\",\n                \"icon\": \"file\"\n              },\n              {\n                \"title\": \"Create First Workbook\",\n                \"path\": \"create-first-workbook\",\n                \"icon\": \"grid\"\n              },\n              {\n                \"title\": \"Chrome Extension\",\n                \"path\": \"chrome-extension\",\n                \"icon\": \"box\"\n              },\n              {\n                \"title\": \"AI Content Language\",\n                \"path\": \"ai-content-language\",\n                \"icon\": \"globe\"\n              }\n            ]\n          },\n          {\n            \"group\": \"Features\",\n            \"pages\": [\n              {\n                \"title\": \"Deep Research Report\",\n                \"path\": \"deep-research-report\",\n                \"icon\": \"file-text\"\n              },\n              {\n                \"title\": \"AI Search\",\n                \"path\": \"ai-search\",\n                \"icon\": \"search\"\n              },\n              {\n                \"group\": \"AI Writer\",\n                \"pages\": [\n                  {\n                    \"title\": \"Overview\",\n                    \"path\": \"ai-writer/overview\",\n                    \"icon\": \"file-text\"\n                  },\n                  {\n                    \"title\": \"Understanding Interface\",\n                    \"path\": \"ai-writer/understanding-interface\",\n                    \"icon\": \"layout\"\n                  },\n                  {\n                    \"title\": \"Generate Document\",\n                    \"path\": \"ai-writer/generate-document\",\n                    \"icon\": \"file\"\n                  },\n                  {\n                    \"title\": \"Ask AI\",\n                    \"path\": \"ai-writer/ask-ai\",\n                    \"icon\": \"lightbulb\"\n                  },\n                  {\n                    \"title\": \"Citations & References\",\n                    \"path\": \"ai-writer/citations-references\",\n                    \"icon\": \"bookmark\"\n                  }\n                ],\n                \"icon\": \"edit3\"\n              },\n              {\n                \"group\": \"My References\",\n                \"pages\": [\n                  {\n                    \"title\": \"Overview\",\n                    \"path\": \"my-references/overview\",\n                    \"icon\": \"file-text\"\n                  },\n                  {\n                    \"title\": \"Importing References\",\n                    \"path\": \"my-references/importing-references\",\n                    \"icon\": \"download\"\n                  },\n                  {\n                    \"title\": \"Import from Zotero\",\n                    \"path\": \"my-references/import-from-zotero\",\n                    \"icon\": \"folder-down\"\n                  },\n                  {\n                    \"title\": \"Organising with Folders\",\n                    \"path\": \"my-references/organising-with-folders\",\n                    \"icon\": \"folder\"\n                  },\n                  {\n                    \"title\": \"Manage Tags\",\n                    \"path\": \"my-references/manage-tags\",\n                    \"icon\": \"tag\"\n                  },\n                  {\n                    \"title\": \"AI Summary (References)\",\n                    \"path\": \"my-references/ai-summary-2\",\n                    \"icon\": \"stars\"\n                  },\n                  {\n                    \"title\": \"Reference Bib\",\n                    \"path\": \"my-references/reference-bibs\",\n                    \"icon\": \"book-open\"\n                  },\n                  {\n                    \"title\": \"Notes & Annotation\",\n                    \"path\": \"my-references/notes-annotation\",\n                    \"icon\": \"highlighter\"\n                  }\n                ],\n                \"icon\": \"folder\"\n              },\n              {\n                \"title\": \"Chat with PDF\",\n                \"path\": \"chat-with-pdf\",\n                \"icon\": \"file\"\n              },\n              {\n                \"title\": \"Literature Review\",\n                \"path\": \"literature-review\",\n                \"icon\": \"search\"\n              },\n              {\n                \"title\": \"Extract Data\",\n                \"path\": \"extract-data\",\n                \"icon\": \"grid\"\n              }\n            ]\n          },\n          {\n            \"group\": \"Others\",\n            \"pages\": [\n              {\n                \"title\": \"Affiliate Program\",\n                \"path\": \"affiliate-program\",\n                \"icon\": \"share-2\"\n              },\n              {\n                \"title\": \"Refer and Earn\",\n                \"path\": \"refer-and-earn\",\n                \"icon\": \"gift\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"tab\": \"FAQs\",\n        \"groups\": [\n          {\n            \"group\": \"My References\",\n            \"pages\": [\n              {\n                \"title\": \"How to Adding references\",\n                \"path\": \"how-adding-references\",\n                \"icon\": \"help-circle\"\n              },\n              {\n                \"title\": \"Importing large collection from Zotero\",\n                \"path\": \"importing-large-collection-from-zotero\",\n                \"icon\": \"download\"\n              }\n            ]\n          }\n        ]\n      },\n      {\n        \"tab\": \"Changelog\",\n        \"pages\": [\n          {\n            \"title\": \"Changelog\",\n            \"path\": \"changelog\",\n            \"icon\": \"history\"\n          }\n        ]\n      }\n    ]\n  },\n  \"favicon\": \"https://blob-cdn.documentation.ai/org-32657b98-c10c-411d-8b88-f43a8010b91d/doc-f333a884-cde9-44eb-8107-3714d598a727/1763705671832-bvvgyrlwcr-Frame-48100559.png\"\n}"
+{
+  "name": "Paperguide Documentation",
+  "initialRoute": "introduction",
+  "colors": {
+    "light": {
+      "brand": "#ff4f00",
+      "heading": "#1a1a1a",
+      "text": "#374151"
+    },
+    "dark": {
+      "brand": "#ff4f00",
+      "heading": "#f2f2f2",
+      "text": "#c1c1c1"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Help Guide",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "introduction",
+                "icon": "zap"
+              },
+              {
+                "title": "Research Backed Answers",
+                "path": "research-backed-answers",
+                "icon": "search"
+              },
+              {
+                "title": "Write First Document",
+                "path": "write-first-document",
+                "icon": "file-text"
+              },
+              {
+                "title": "Adding References",
+                "path": "adding-references",
+                "icon": "folder"
+              },
+              {
+                "title": "Chatting with PDFs",
+                "path": "chat-with-papers",
+                "icon": "file"
+              },
+              {
+                "title": "Create First Workbook",
+                "path": "create-first-workbook",
+                "icon": "grid"
+              },
+              {
+                "title": "Chrome Extension",
+                "path": "chrome-extension",
+                "icon": "box"
+              },
+              {
+                "title": "AI Content Language",
+                "path": "ai-content-language",
+                "icon": "globe"
+              }
+            ]
+          },
+          {
+            "group": "Features",
+            "pages": [
+              {
+                "title": "Deep Research Report",
+                "path": "deep-research-report",
+                "icon": "file-text"
+              },
+              {
+                "title": "AI Search",
+                "path": "ai-search",
+                "icon": "search"
+              },
+              {
+                "group": "AI Writer",
+                "pages": [
+                  {
+                    "title": "Overview",
+                    "path": "ai-writer/overview",
+                    "icon": "file-text"
+                  },
+                  {
+                    "title": "Understanding Interface",
+                    "path": "ai-writer/understanding-interface",
+                    "icon": "layout"
+                  },
+                  {
+                    "title": "Generate Document",
+                    "path": "ai-writer/generate-document",
+                    "icon": "file"
+                  },
+                  {
+                    "title": "Ask AI",
+                    "path": "ai-writer/ask-ai",
+                    "icon": "lightbulb"
+                  },
+                  {
+                    "title": "Citations & References",
+                    "path": "ai-writer/citations-references",
+                    "icon": "bookmark"
+                  }
+                ],
+                "icon": "edit3"
+              },
+              {
+                "group": "My References",
+                "pages": [
+                  {
+                    "title": "Overview",
+                    "path": "my-references/overview",
+                    "icon": "file-text"
+                  },
+                  {
+                    "title": "Importing References",
+                    "path": "my-references/importing-references",
+                    "icon": "download"
+                  },
+                  {
+                    "title": "Import from Zotero",
+                    "path": "my-references/import-from-zotero",
+                    "icon": "folder-down"
+                  },
+                  {
+                    "title": "Organising with Folders",
+                    "path": "my-references/organising-with-folders",
+                    "icon": "folder"
+                  },
+                  {
+                    "title": "Manage Tags",
+                    "path": "my-references/manage-tags",
+                    "icon": "tag"
+                  },
+                  {
+                    "title": "AI Summary (References)",
+                    "path": "my-references/ai-summary-2",
+                    "icon": "stars"
+                  },
+                  {
+                    "title": "Reference Bib",
+                    "path": "my-references/reference-bibs",
+                    "icon": "book-open"
+                  },
+                  {
+                    "title": "Notes & Annotation",
+                    "path": "my-references/notes-annotation",
+                    "icon": "highlighter"
+                  }
+                ],
+                "icon": "folder"
+              },
+              {
+                "title": "Chat with PDF",
+                "path": "chat-with-pdf",
+                "icon": "file"
+              },
+              {
+                "title": "Literature Review",
+                "path": "literature-review",
+                "icon": "search"
+              },
+              {
+                "title": "Extract Data",
+                "path": "extract-data",
+                "icon": "grid"
+              }
+            ]
+          },
+          {
+            "group": "Others",
+            "pages": [
+              {
+                "title": "Affiliate Program",
+                "path": "affiliate-program",
+                "icon": "share-2"
+              },
+              {
+                "title": "Refer and Earn",
+                "path": "refer-and-earn",
+                "icon": "gift"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "FAQs",
+        "groups": [
+          {
+            "group": "My References",
+            "pages": [
+              {
+                "title": "How to Adding references",
+                "path": "how-adding-references",
+                "icon": "help-circle"
+              },
+              {
+                "title": "Importing large collection from Zotero",
+                "path": "importing-large-collection-from-zotero",
+                "icon": "download"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "pages": [
+          {
+            "title": "Changelog",
+            "path": "changelog",
+            "icon": "history"
+          }
+        ]
+      }
+    ]
+  },
+  "favicon": "https://blob-cdn.documentation.ai/org-32657b98-c10c-411d-8b88-f43a8010b91d/doc-f333a884-cde9-44eb-8107-3714d598a727/1763705671832-bvvgyrlwcr-Frame-48100559.png",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-32657b98-c10c-411d-8b88-f43a8010b91d/doc-f333a884-cde9-44eb-8107-3714d598a727/1763705652841-tkd4k6e04i-paperguide-dark-theme-logo.png",
+  "logo-light": "https://blob-cdn.documentation.ai/org-32657b98-c10c-411d-8b88-f43a8010b91d/doc-f333a884-cde9-44eb-8107-3714d598a727/1763705663446-4kojnn1ps4t-paperguide-logo.png"
+}
