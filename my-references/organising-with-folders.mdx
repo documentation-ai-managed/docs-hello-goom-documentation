@@ -1,243 +1,123 @@
 ---
 title: Organising with Folders
-description: Learn how to efficiently organise your research materials in Paperguide's Reference Manager using folders. This guide provides step-by-step instructions for creating, managing, and navigating your reference folders.
+description: Learn how to organise, manage, and navigate your references in Paperguide using flexible folders. This guide explains creating, renaming, moving, and optimising your folder setup.
 ---
 
-## 1. Introduction to Folder Organisation
-
-Keeping research materials ordered can be challenging, especially as your collection grows. Paperguide’s Reference Manager offers powerful folder organisation features to help you sort references by project, topic, or priority.
+Paperguide allows you to efficiently organise your references into flexible, user-created folders. The folder system is accessible via the sidebar in **My References**, giving you an easy way to structure your research library for quick access and ongoing project management.
 
 <Callout kind="info">
-
-Folders allow you to group references in whatever way works best for your workflow—by course, paper, theme, or any system you choose.
-
+Folders in Paperguide are private and fully customizable—only you can view or modify your reference folders unless you choose to export or share selected items.
 </Callout>
 
-## 2. Accessing the Folder Panel
+## Creating a New Folder
 
-To start creating and managing folders, first open your Reference Manager.
-
-<Image 
-  src="https://paperguide-docs-static.s3.amazonaws.com/my-references/folders-overview.png"
-  alt="Paperguide Reference Manager showing folders panel"
-  width="800"
-  height="400"
-/>
-
-**How to access the folder panel:**
-
-- Log in to Paperguide and navigate to **My References** from the main menu.
-- The left sidebar displays your folder structure.
-
-## 3. Creating a New Folder
+To create a new folder:
 
 <Steps>
-
-<Step title="Click the 'New Folder' Button" icon="folder-plus">
-
-  
-Locate and click the **New Folder** button in the sidebar. This opens a create dialog.
-  
-
+<Step title="Create a folder in My References" icon="folder" title-type="h3">
+Click the <kbd>+</kbd> icon next to **All Papers** in the sidebar. Enter a folder name to add it instantly to your reference library.
 </Step>
-
-<Step title="Name Your Folder" icon="edit3">
-
-  
-Enter an appropriate folder name (e.g. *Literature Review*, *Thesis Sources*).
-  
-
-</Step>
-
-<Step title="Save the Folder" icon="check-circle">
-
-  
-Click **Create** (or **Save**) to add the folder to your list.
-  
-
-</Step>
-
 </Steps>
 
-<Callout kind="tip">
+## Adding References
 
-Name folders clearly and consistently for easier retrieval later. Consider including course codes or project names in folder titles.
+To add or import references:
 
-</Callout>
+You can bring new references into your library using Paperguide’s import options. Simply use the **Import** function within **My References** to add PDFs or citation files. For a full step-by-step workflow, see [Importing References](/my-references/importing-references).
 
-## 4. Adding References to a Folder
-
-You can move existing references into folders or add new ones directly.
-
-<Columns cols={2}>
-
+<Columns cols="2">
 <Card 
-  title="Move Existing Reference" 
-  href="/my-references/importing-references"
-  icon="arrow-right"
-  cta="Learn more"
+  title="Import from Zotero"
+  href="/my-references/import-from-zotero"
+  icon="download"
+  cta="See guide"
 >
-
-  
-- Drag and drop a reference from the main list into your desired folder, or
-- Use the reference **Actions** menu (**⋮**) and select **Move to Folder**.
-  
-
+Migrate entire collections from Zotero directly into Paperguide folders.
 </Card>
-
 <Card 
-  title="Add New Reference to a Folder"
+  title="Manual Entry"
   href="/adding-references"
-  icon="folder-plus"
-  cta="How to Add"
+  icon="file-plus"
+  cta="Add individually"
 >
-
-  
-When adding a new reference, use the **Folder** dropdown to assign it immediately.
-  
-
+Manually add single papers or reference entries for full flexibility.
 </Card>
-
 </Columns>
 
-## 5. Managing and Renaming Folders
+## Managing and Renaming Folders
+
+Organise your references efficiently by managing folders as your research evolves.
 
 <Tabs>
-
-<Tab title="Rename" icon="edit3">
-
-  
-- Right-click the folder you wish to rename.
-- Select **Rename** from the menu.
-- Enter the new name and click **Save**.
-  
-
+<Tab title="Move references" icon="arrow-right">
+To move references from one folder to another, simply **drag and drop** the reference entry onto the destination folder in the sidebar. The reference will be reassigned immediately.
 </Tab>
-
-<Tab title="Delete" icon="x-circle">
-
-  
-- Right-click the folder to remove.
-- Select **Delete**.
-- Confirm the deletion in the prompt.
-  
-
+<Tab title="Rename folder" icon="edit">
+Rename a folder by right-clicking its name in the sidebar and selecting **Rename**. Enter the new desired name and confirm.
 </Tab>
-
-<Tab title="Reorder" icon="chevron-right">
-
-  
-- Drag folders up or down in the sidebar to reorder them and suit your needs.
-  
-
+<Tab title="Delete folder" icon="x-circle">
+To remove a folder, right-click on its name and select **Delete**. Confirm the action to permanently delete the folder and all references only present in that folder.
 </Tab>
-
+<Tab title="Reorder folders" icon="list">
+You can reorder folders by dragging them up or down in the sidebar to prioritise projects or research phases as you wish.
+</Tab>
 </Tabs>
 
-<Callout kind="alert">
-
-Deleting a folder will **not** delete the references inside. They will remain in your library under "All References" unless you explicitly remove them.
-
-</Callout>
-
-## 6. Folder Best Practices
-
 <ExpandableGroup>
-
-<Expandable title="Suggested Folder Structures" default-open="false">
-
-  
-- By research project (e.g. *Machine Learning Thesis*)
-- By topic or subject area
-- By document type (e.g. *Journal Articles*, *Conference Proceedings*)
-  
-
+<Expandable title="Can I create nested folders?" default-open="false">
+Currently, Paperguide supports a single folder hierarchy level. Multiple folders are allowed but subfolders (nested folders) are not supported yet.
 </Expandable>
-
-<Expandable title="Bulk Actions Supported" default-open="false">
-
-  
-- Move multiple references at once by selecting and dragging them to a folder.
-- Select and delete multiple folders for large reorganisations.
-  
-
+<Expandable title="Do deleted references disappear everywhere?" default-open="false">
+Deleting a reference from its last folder will remove it from your entire Paperguide library. If a reference exists in multiple folders, removing it from one folder does not delete it from others.
 </Expandable>
-
-<Expandable title="Searching and Filtering" default-open="false">
-
-  
-Use the search bar above your folder list to quickly find specific folders or references.
-  
-
-</Expandable>
-
 </ExpandableGroup>
 
-## 7. Visual Reference: Folder Workflow
+## Best Practices
 
-The diagram below outlines a typical workflow for using folders in Paperguide.
+- Use distinctive folder names for different projects or research phases.
+- Periodically review folders to archive completed projects.
+- Maintain a small number of top-level folders for easy navigation.
+- Use manual entry or import tools to keep your references up to date.
+
+## Visual Workflow
+
+Visualising reference and folder management in Paperguide:
 
 ```mermaid
-graph TD
-    A[Add New Folder] --> B[Move References]
-    B --> C[Organise by Topic]
-    C --> D[Find Easily]
+graph LR
+  A[All Papers] --> B[Project Folders]
+  B --> C[Paper 1]
+  B --> D[Paper 2]
 ```
 
-## 8. Frequently Asked Questions
+## Frequently Asked Questions
 
 <ExpandableGroup>
-
-<Expandable title="Can I nest folders (use subfolders)?" default-open="false">
-
-  
-Currently, subfolders are not supported. All folders are at the same level for simplicity.
-  
-
+<Expandable title="Can I share folders or references with collaborators?" default-open="false">
+Paperguide currently does not support direct folder sharing, but you can export references and share citation files or PDFs as needed.
 </Expandable>
-
-<Expandable title="What happens if I delete a folder?" default-open="false">
-
-  
-References in a deleted folder are **not** deleted—they remain accessible in your main library.
-  
-
+<Expandable title="Can I recover deleted folders?" default-open="false">
+Deleted folders cannot be restored. Be sure before confirming deletion.
 </Expandable>
-
-<Expandable title="Is there a maximum number of folders?" default-open="false">
-
-  
-Paperguide does not currently limit the number of folders you can create.
-  
-
-</Expandable>
-
 </ExpandableGroup>
 
-## 9. Next Steps
+## Next Steps
 
-<Columns cols={2}>
-
+<Columns cols="2">
 <Card 
-  title="Import References"
+  title="Importing References"
   href="/my-references/importing-references"
   icon="download"
-  cta="Import now"
+  cta="Learn how"
 >
-  
-Learn how to add more references to your library.
-  
+Read a comprehensive guide on bringing new references into your library.
 </Card>
-
 <Card 
-  title="Explore Reference Manager"
+  title="My References Overview"
   href="/my-references/overview"
-  icon="book-open"
-  cta="Get started"
+  icon="file-text"
+  cta="Overview"
 >
-  
-See an overview of all features available in **My References**.
-  
+Understand all features available in the My References area.
 </Card>
-
 </Columns>
