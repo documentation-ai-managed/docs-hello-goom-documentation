@@ -422,7 +422,12 @@
         "title": "Dashboard",
         "link": "https://paperguide.ai"
       },
-      "links": []
+      "links": [
+        {
+          "title": "Roadmap",
+          "link": "https://paperguide.featurebase.app/roadmap"
+        }
+      ]
     }
   },
   "template": "atlas"
