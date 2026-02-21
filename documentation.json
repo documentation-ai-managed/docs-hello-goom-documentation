@@ -71,6 +71,11 @@
                 "icon": "lucide-sparkles"
               },
               {
+                "title": "Chat with PDF 2.0",
+                "path": "chat-with-pdf-new",
+                "icon": "lucide-message-square-text"
+              },
+              {
                 "title": "Deep Research Report",
                 "path": "deep-research-report",
                 "icon": "file-text"
