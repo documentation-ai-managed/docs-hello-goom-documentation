@@ -23,7 +23,10 @@
               {
                 "title": "Introduction",
                 "path": "introduction",
-                "icon": "zap"
+                "icon": "zap",
+                "show-sidebar": false,
+                "show-toc": false,
+                "show-parent-label": false
               },
               {
                 "title": "Research Backed Answers",
