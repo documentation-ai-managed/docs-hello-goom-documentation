@@ -25,7 +25,8 @@
                 "path": "introduction",
                 "icon": "zap",
                 "show-toc": false,
-                "show-parent-label": false
+                "show-parent-label": false,
+                "content-width": "wide"
               },
               {
                 "title": "Research Backed Answers",
