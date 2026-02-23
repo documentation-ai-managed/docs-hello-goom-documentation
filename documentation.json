@@ -24,7 +24,6 @@
                 "title": "Introduction",
                 "path": "introduction",
                 "icon": "zap",
-                "show-sidebar": false,
                 "show-toc": false,
                 "show-parent-label": false
               },
