@@ -58,9 +58,9 @@
                 "icon": "box"
               },
               {
-                "title": "AI Content Language",
-                "path": "ai-content-language",
-                "icon": "globe"
+                "title": "AI Credits",
+                "path": "ai-credits",
+                "icon": "lucide-coins"
               }
             ]
           },
@@ -194,6 +194,11 @@
           {
             "group": "Others",
             "pages": [
+              {
+                "title": "AI Content Language",
+                "path": "ai-content-language",
+                "icon": "globe"
+              },
               {
                 "title": "Affiliate Program",
                 "path": "affiliate-program",
