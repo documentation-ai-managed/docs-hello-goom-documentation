@@ -75,7 +75,7 @@
               {
                 "title": "AI Search 2.0",
                 "path": "ai-search-new",
-                "icon": "lucide-sparkles"
+                "icon": "lucide-search"
               },
               {
                 "title": "Chat with PDF 2.0",
@@ -83,19 +83,19 @@
                 "icon": "lucide-message-square"
               },
               {
+                "title": "Literature Review Agent",
+                "path": "literature-review-agent",
+                "icon": "lucide-text-search"
+              },
+              {
                 "title": "General Purpose Agent",
                 "path": "general-purpose-agent",
-                "icon": "bot"
+                "icon": "atom"
               },
               {
                 "title": "Deep Research Report",
                 "path": "deep-research-report",
-                "icon": "file-text"
-              },
-              {
-                "title": "AI Search",
-                "path": "ai-search",
-                "icon": "search"
+                "icon": "file-search"
               },
               {
                 "group": "AI Writer",
@@ -182,22 +182,12 @@
                     "icon": "lucide-users"
                   }
                 ],
-                "icon": "folder"
-              },
-              {
-                "title": "Chat with PDF",
-                "path": "chat-with-pdf",
-                "icon": "file"
-              },
-              {
-                "title": "Literature Review",
-                "path": "literature-review",
-                "icon": "search"
+                "icon": "folder-open-icon"
               },
               {
                 "title": "Extract Data",
                 "path": "extract-data",
-                "icon": "grid"
+                "icon": "lucide-sheet"
               }
             ]
           },

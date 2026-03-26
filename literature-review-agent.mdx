@@ -1,0 +1,262 @@
+---
+title: Literature Review Agent
+description: Generate a structured, traceable literature review from a research question using Paperguide’s Literature Review Agent, with clear inputs, workflow, and outputs.
+---
+
+## Overview
+
+Literature Review Agent turns a research question into a structured, traceable literature review by planning the process, finding and screening papers, extracting key data, and drafting a report.
+
+Use it when you want a complete, citation-backed overview on a focused topic without manually juggling searches, spreadsheets, and notes.
+
+[Open Literature Review Agent](https://paperguide.ai/literature-review-agent/)
+
+<Callout kind="info">
+
+Literature Review Agent is designed for focused questions or topics, not for extremely broad prompts like "write everything about climate change."
+
+</Callout>
+
+## When to use Literature Review Agent
+
+Use the agent when you need:
+
+- A **structured literature review report** with in-text citations.
+- A **transparent trail** of which papers were considered, included, or excluded and why.
+- **Screened and filtered papers** matching your methodological or quality requirements.
+- **Extracted data** ready for further analysis or export to your own tools.
+
+Typical use cases:
+
+- Planning a thesis or dissertation chapter.
+- Writing the related work section of a paper.
+- Preparing a grant application with up-to-date evidence.
+- Mapping the current state of research on a niche question.
+
+## What you can provide as inputs
+
+The agent works best when you are explicit about your question and constraints.
+
+### Core research question or topic
+
+Start by entering a clear research question or focused topic, for example:
+
+- "How does daily social media use relate to anxiety, depression, or self-esteem in young adults?"
+- "Does personalized learning with AI tools improve student outcomes compared to traditional instruction?"
+
+The agent uses this to design its search and screening plan.
+
+<Callout kind="info">
+
+Write your question with **population**, **intervention/exposure**, and **outcome** where possible. For example: "In university students (population), how does sleep duration/quality (exposure) relate to GPA and working memory (outcomes)?"
+
+</Callout>
+
+### Requirements and constraints
+
+Optionally add requirements so the agent can screen and prioritize papers that are most relevant to your project. You can specify:
+
+- **Domain or subfield**  
+  Examples: "clinical psychology", "urban planning", "computer science education".
+
+- **Target journals or venues**  
+  Examples: "prioritize journals indexed in Scopus", "focus on journals like Journal of Sleep Research or Sleep Medicine", "conference papers from NeurIPS and ICML only".
+
+- **Study type or methods**  
+  Examples: "empirical, quantitative studies only", "exclude case reports", "focus on randomized controlled trials".
+
+- **Quality indicators** such as SJR or SNIP  
+  Examples: "prefer journals with SJR in Q1 or Q2", "prioritize SNIP above 1.0 where available".
+
+The agent uses these requirements during the screening phase to decide which candidate papers to include or exclude and how to rank them.
+
+## Choosing sources for your review
+
+Select where the agent should search and which papers it can consider as candidates.
+
+<Columns cols={3}>
+
+<Card title="Paperguide research database" icon="database" href="https://paperguide.ai/literature-review-agent/">
+
+Search across Paperguide's public research database of roughly 200M papers to find relevant articles for your question.
+
+</Card>
+
+<Card title="PubMed" icon="search" href="https://paperguide.ai/literature-review-agent/">
+
+Focus on biomedical and life sciences literature by restricting candidate papers to PubMed results.
+
+</Card>
+
+<Card title="Reference Manager" icon="folder" href="/my-references/overview">
+
+Use papers you already collected in your Paperguide reference manager as the input set for screening and synthesis.
+
+</Card>
+
+</Columns>
+
+You can:
+
+- Start from the **full Paperguide database (~200M papers)** for broad coverage.
+- Limit to **PubMed** when you work in biomedical or health-related fields.
+- Use **your reference manager** when you already curated a set of papers and want the agent to screen and synthesize those specifically.
+
+## How the agent works end to end
+
+Literature Review Agent follows a multi-step workflow to keep the review transparent and traceable.
+
+<Steps>
+
+<Step title="Plan the review" icon="settings">
+
+The agent first turns your question and requirements into a step-by-step plan.  
+It clarifies:
+
+- How to search (keywords, fields, and filters).
+- How to apply your domain, journal, and quality constraints.
+- How to decide which papers are "in scope" for the final synthesis.
+
+You see this plan so you understand how the agent will approach your question before it starts searching.
+
+</Step>
+
+<Step title="Search and build a candidate list" icon="search">
+
+Next, the agent searches the selected source:
+
+- **Paperguide database (~200M papers)**, or
+- **PubMed**, or
+- **Your reference manager collection**.
+
+It compiles a **curated candidate list** of papers that appear relevant to your question based on titles, abstracts, and metadata.
+
+</Step>
+
+<Step title="Screen papers against your requirements" icon="filter">
+
+The agent then screens candidate papers for:
+
+- Relevance to your question/topic.
+- Alignment with domain or study-type preferences.
+- Journal or venue requirements.
+- Quality indicators such as SJR or SNIP if you specified them.
+
+For each paper, the agent records **screening outcomes** including whether it is included or excluded and the reason.
+
+</Step>
+
+<Step title="Extract key details from included papers" icon="grid">
+
+From papers that pass screening, the agent **extracts key data**, such as:
+
+- Basic metadata (title, authors, year, journal).
+- Research question or aim.
+- Methods and sample.
+- Main findings and conclusions.
+- Any additional fields relevant to your question.
+
+This extracted data forms the structured backbone for your final report and any further analysis.
+
+</Step>
+
+<Step title="Synthesize and draft the literature review report" icon="file-text">
+
+Finally, the agent generates a **detailed literature review report** using the **top 20 related papers** that best match your question and requirements.
+
+The report:
+
+- Summarizes and compares findings across included papers.
+- Highlights patterns, agreements, and disagreements.
+- References each paper with **citations** so you can trace back every claim.
+
+You can then edit, export, or reuse this report in your own documents.
+
+</Step>
+
+</Steps>
+
+## What you get as outputs
+
+After running the Literature Review Agent, you receive several linked artifacts.
+
+<Columns cols={2}>
+
+<Card title="Literature review report" icon="file-text" href="https://paperguide.ai/literature-review-agent/">
+
+A structured narrative review based on the top 20 related papers, with citations embedded throughout so you can trace every claim back to specific sources.
+
+</Card>
+
+<Card title="Candidate and selected papers" icon="folder" href="https://paperguide.ai/literature-review-agent/">
+
+A list of all papers considered, clearly distinguishing which were included in the final review and which were excluded.
+
+</Card>
+
+</Columns>
+
+<Columns cols={2}>
+
+<Card title="Screening outcomes" icon="check" href="https://paperguide.ai/literature-review-agent/">
+
+For each paper, you see whether it was included or excluded and the reason, helping you justify selection decisions in methods sections or appendices.
+
+</Card>
+
+<Card title="Extracted data" icon="grid" href="/extract-data">
+
+Structured data extracted from the included papers that you can inspect or use as a starting point for further analysis or workbook-based workflows.
+
+</Card>
+
+</Columns>
+
+These outputs give you both the **narrative answer** (the report) and the **evidence trail** (lists, screening outcomes, and extracted data).
+
+## Examples: questions and requirements
+
+Use these example prompts and requirements as a starting point for your own projects.
+
+### Example research questions
+
+<Card title="Example topics and questions" horizontal="false">
+
+- Social media and mental health — *How does daily social media use relate to anxiety, depression, or self-esteem in young adults?*  
+- AI in education — *Does personalized learning with AI tools improve student outcomes compared to traditional instruction?*  
+- Sleep and academic performance — *How does sleep duration/quality predict grades, attention, and memory in students?*  
+- Bias and fairness in AI — *Which bias-mitigation methods most effectively reduce unfair outcomes without hurting performance?*  
+- Reproducibility in science — *What are the most common causes of failed replication, and which interventions improve reproducibility?*  
+- Urban green spaces and wellbeing — *Do nearby parks and green spaces measurably improve mental wellbeing and stress levels in cities?*
+
+</Card>
+
+### Example requirements
+
+You can add short requirement notes when you start the agent, such as:
+
+- "Focus on peer-reviewed journal articles from 2015 onwards, prefer journals in SJR Q1 or Q2 within psychology."
+- "Include randomized controlled trials only; prioritize studies indexed in PubMed and exclude conference posters or preprints."
+
+<Callout kind="info">
+
+Keep requirements concise but specific. For example, "2015–present, RCTs in adults, SJR Q1 and Q2 journals" is more actionable than a long narrative paragraph of preferences.
+
+</Callout>
+
+## How this differs from the Literature Review table/workbook
+
+Paperguide offers both the **Literature Review Agent** and the **Literature Review table/workbook** feature, and they serve slightly different roles.
+
+- **Literature Review Agent**  
+  Automates the end-to-end flow from question and requirements through search, screening, extraction, and synthesis into a **ready-made literature review report** plus traceable lists and outcomes.
+
+- **Literature Review table/workbook** (`/literature-review`)  
+  Provides a **customizable table-based workspace** where you manually configure columns, add or import papers, and work through screening and extraction in a spreadsheet-like view.
+
+A common pattern is:
+
+1. Use **Literature Review Agent** to quickly generate an initial review and structured outputs.
+2. Move into the **Literature Review table/workbook** to refine screening decisions, customize columns, or add more detailed extraction for specific subsets of papers.
+
+If you want hands-on control of every column and row, start or continue in the [Literature Review](/literature-review) feature. If you want a guided, automated path to a narrative review, start with the **Literature Review Agent**.
