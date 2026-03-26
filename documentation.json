@@ -83,6 +83,11 @@
                 "icon": "lucide-message-square"
               },
               {
+                "title": "General Purpose Agent",
+                "path": "general-purpose-agent",
+                "icon": "bot"
+              },
+              {
                 "title": "Deep Research Report",
                 "path": "deep-research-report",
                 "icon": "file-text"
